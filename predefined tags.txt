@@ -1,0 +1,20 @@
+-expenses
+	-food
+	-transportation
+	-housing
+	-insurance
+	-debt
+	-utilities
+	-personal care
+	-entertainment
+	-health and fitness
+	-education
+	-savings
+-income
+	-salary
+	-investment
+	-business
+	-rent
+	-pension
+	-government benefits
+	-gifts

@@ -1,0 +1,21 @@
+-main data unit- expense(-)/income(+)
+	-Name
+	-Tag (category)
+	-Amount
+	-Currency
+	-Date
+
+-financial reports- pie chart (*cool name here* financial charts?)
+	-by tag
+	-by date
+-grid with entries (CashCanvas)
+	-filter by date and tag
+	-sorting by amount and date
+	-must allow editing and deleting each entry
+-user system
+	-login/register
+	-user roles- regular and admin
+-admin
+	-admin panel- all users and their data
+-tags CRUD (My tags)
+	-each user can create/update/delete their own tags

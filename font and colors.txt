@@ -1,0 +1,5 @@
+-rubik light/lato light font
+-green for income
+-red for expense
+-red + green = yellow for ui color
+-yellow monochromatic color scheme for the app

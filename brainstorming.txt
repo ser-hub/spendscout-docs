@@ -1,0 +1,118 @@
+name contest:
+-CashCanvas
+-CoinChronicle
+-SpendScout ✓
+-CoinCognizant
+caption:
+-an expense tracking app
+
+---------------------------------------------------------
+
+requirements:
+-main data unit- expense(-)/income(+)
+	-Name
+	-Tag (category)
+	-Amount
+	-Currency
+	-Date
+
+-financial reports- pie chart (*cool name here* financial charts?)
+	-by tag
+	-by date
+-grid with entries (CashCanvas)
+	-filter by date and tag
+	-sorting by amount and date
+	-must allow editing and deleting each entry
+-user system
+	-login/register
+	-user roles- regular and admin
+-admin
+	-admin panel- all users and their data
+-tags CRUD (My tags)
+	-each user can create/update/delete their own tags
+
+---------------------------------------------------------
+
+database:
+-entries
+	-user_id: int (foreign key)
+	-name: string
+	-is_income: bool
+	-tag_id: int (foreign key)
+	-amount: float
+	-currency_id: int (foreign key)
+	-date: datetime
+-users
+	-username: string
+	-password: string
+	-is_active: bool
+	-user_role_id: int (foreign key)
+-user_roles
+	-name: string
+-tags
+	-user_id: int (foreign key)
+	-name: string
+-currencies
+	-name: string
+	-code: string
+
+---------------------------------------------------------
+
+colors:
+-green for income
+-red for expense
+-red + green = yellow for ui color
+-yellow monochromatic color scheme for the app
+
+---------------------------------------------------------
+
+font:
+-rubik light/lato light
+
+---------------------------------------------------------
+
+predefined tags:
+-expenses
+	-food
+	-transportation
+	-housing
+	-insurance
+	-debt
+	-utilities
+	-personal care
+	-entertainment
+	-health and fitness
+	-education
+	-savings
+-income
+	-salary
+	-investment
+	-business
+	-rent
+	-pension
+	-government benefits
+	-gifts
+
+---------------------------------------------------------
+
+views and routes:
+GET: /login- login page
+GET: /register- register page
+GET: /home- home page (includes grid (CashCanvas))
+GET: /profile- profile page
+GET: /reports- reports page
+GET: /admin- admin panel page (for admin)
+
+GET: /entries- get all user entries
+POST: /entries- add entry
+PUT: /entries/{id}- edit entry
+DELETE: /entries/{id}- delete entry
+
+GET: /tags- get all tags
+POST: /tags- add tag
+PUT: /tags/{id}- edit tag
+DELETE: /tags/{id}- delete tag
+
+GET: /users- get all user data (for admin)
+
+---------------------------------------------------------

@@ -1,0 +1,18 @@
+GET: /login- login page
+GET: /register- register page
+GET: /home- home page (includes grid (CashCanvas))
+GET: /profile- profile page
+GET: /reports- reports page
+GET: /admin- admin panel page (for admin)
+
+GET: /entries- get all user entries
+POST: /entries- add entry
+PUT: /entries/{id}- edit entry
+DELETE: /entries/{id}- delete entry
+
+GET: /tags- get all tags
+POST: /tags- add tag
+PUT: /tags/{id}- edit tag
+DELETE: /tags/{id}- delete tag
+
+GET: /users- get all user data (for admin)
