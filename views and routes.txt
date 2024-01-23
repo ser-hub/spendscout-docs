@@ -1,9 +1,9 @@
+USER:
 GET: /login- login page
 GET: /register- register page
-GET: /home- home page (includes grid (CashCanvas))
+GET: /home- home page
 GET: /profile- profile page
 GET: /reports- reports page
-GET: /admin- admin panel page (for admin)
 
 GET: /entries- get all user entries
 POST: /entries- add entry
@@ -15,4 +15,7 @@ POST: /tags- add tag
 PUT: /tags/{id}- edit tag
 DELETE: /tags/{id}- delete tag
 
-GET: /users- get all user data (for admin)
+ADMIN:
+GET: /admin- admin panel page
+GET: /users- get all users
+GET: /users/{id}- get specific user data
