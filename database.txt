@@ -1,7 +1,7 @@
 -entries
 	-user_id: int (foreign key)
 	-name: varchar
-	-is_income: bool
+	-is_expense: bool
 	-tag_id: int (foreign key)
 	-amount: float
 	-currency_id: int (foreign key)
@@ -16,5 +16,4 @@
 	-user_id: int (foreign key)
 	-name: varchar
 -currencies
-	-name: varchar
 	-code: varchar
